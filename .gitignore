@@ -1,0 +1,24 @@
+# Build folders
+build-*/
+debug/
+release/
+
+# Qt Creator user-specific files
+*.pro.user
+*.pro.user.*
+*.qmake.stash
+*.qmake.cache
+*.creator
+
+# Backup and temporary files
+*.swp
+*.swo
+*~
+*.tmp
+
+# Binary/database files (baza će se kreirati automatski)
+*.db
+
+# OS-specific files
+.DS_Store
+Thumbs.db
