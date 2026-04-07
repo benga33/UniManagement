@@ -27,11 +27,6 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->pushButton_3, &QPushButton::clicked, this, &MainWindow::updateFun);
     connect(updatebox, &updateBox::newSub, this, &MainWindow::onUpdate);
 
-    // Kreiranje tabele ako ne postoji
-    QSqlQuery query;
-    if(!query.exec("CREATE TABLE IF NOT EXISTS student (id TEXT PRIMARY KEY, name TEXT, subject TEXT)")) {
-        qDebug() << "Greška pri kreiranju tabele:" << query.lastError().text();
-    }
 }
 
 MainWindow::~MainWindow()
